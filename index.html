@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- link css files -->
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div id="app">
+        <span id="languages-choose">Languages:</span>
+        <button id="na" class="na active">english</button>
+        <button id="vi" class="vi">Vietnam</button>
+        <div class="form">
+            <div class="form__control">
+                <input placeholder="Result Password Here" type="text" id="result" disabled>
+                <button id="copy">copy</button>
+            </div>
+            <div class="form__control">
+                <label id="label-length" for="length">length Password</label>
+                <input type="number" id="length" min="6" max="40">
+            </div>
+            <div class="form__control">
+                <label id="label-upper" for="upper">contain uppercase letters</label>
+                <input class="form__control__checkbox" type="checkbox" id="upper">
+            </div>
+            <div class="form__control">
+                <label id="label-lower" for="lower">contain lowercase letters</label>
+                <input class="form__control__checkbox" type="checkbox" id="lower">
+            </div>
+            <div class="form__control">
+                <label id="label-number" for="number">contain numbers</label>
+                <input class="form__control__checkbox" type="checkbox" id="number">
+            </div>
+            <div class="form__control">
+                <label id="label-symbol" for="symbol">contain symbols !@#$*&...</label>
+                <input class="form__control__checkbox" type="checkbox" id="symbol">
+            </div>
+            <div id="error">
+            </div>
+            <div id="noti"></div>
+            <button id="submit">Password Generator</button>
+            <p id="copy-right" class="form__control__copy"></p>
+        </div>
+    </div>
+    <script src="./assets/script/app.js"></script>
+</body>
+
+</html>
